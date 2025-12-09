@@ -1,0 +1,53 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+
+# === Entornos virtuales ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Carpetas de pruebas o no necesarias ===
+prueba/
+Correction-Testing/
+StereoCapture/
+
+# === Ultralytics-main-backup ===
+# No ignorar la carpeta principal
+!Ultralytics-main-backup/
+
+# Ignorar únicamente lo pesado dentro de Ultralytics-main-backup
+Ultralytics-main-backup/.conda/
+Ultralytics-main-backup/**/site-packages/
+Ultralytics-main-backup/**/__pycache__/
+Ultralytics-main-backup/**/*.pyc
+Ultralytics-main-backup/**/*.dll
+Ultralytics-main-backup/**/Lib/
+Ultralytics-main-backup/**/lib/
+
+# Asegurar que SÍ suban tus scripts .py
+!Ultralytics-main-backup/**/*.py
+
+# === IDE / Editor ===
+.vscode/
+*.code-workspace
+.idea/
+
+# === Datos pesados / temporales ===
+*.mat
+*.log
+
+# === Salidas de entrenamiento o ejecución ===
+runs/
+
+# === Librerías gigantes en cualquier ruta ===
+**/.conda/
+**/Lib/site-packages/
+**/lib/site-packages/
+
+# === Archivos binarios pesados que no deben subirse ===
+*.dll
+*.so
+*.dylib
